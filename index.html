@@ -1,0 +1,332 @@
+<!--?php @session_start();
+get_includes('head');
+get_includes('header');
+get_includes('nav');
+get_includes('banner');
+?-->
+<!--?php if ( is_front_page() ) { get_includes('middle'); }?-->
+
+<!DOCTYPE html>
+<!--[if lt IE 10]>      <html class="no-js lt-ie11 lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 10]>         <html class="no-js lt-ie11 lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 11]>         <html class="no-js lt-ie11"> <![endif]-->
+<!--[if gt IE 11]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+
+	<!-- <title><?php //echo get_bloginfo('name');?>CompanyName</title> -->
+	<title>Lumapac Sample Site</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/hamburgers.min.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/rslides.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/skitter.styles.css" type="text/css" media="all"  />
+
+	<!--?php wp_head(); ?-->
+</head>
+	<body>
+		<div class="protect-me">
+		<div class="clearfix">
+
+<!-- Header -->
+<header>
+	<div class="wrapper">
+		<div class="header_con">
+			<div class="main_logo">
+			  <a href="<?php //echo get_home_url(); ?>"><figure><img src="images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"/></figure></a>
+			</div>
+
+			<div class="head_info">
+				<div class="header_info">
+					<h3>Don't hesitate to call us today! </h3>
+					<mark>123-456-7890</mark>
+				</div>
+				<div class="social_media">
+					<ul>
+						<li><a href="https://www.facebook.com" target="_blank"><figure><img src="images/icon-fb.png" alt="facebook"/></figure></a></li>
+						<li><a href="https://www.twitter.com" target="_blank"><figure><img src="images/icon-twitter.png" alt="twitter"/></figure></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	  <div class="clearfix"></div>
+	</div>
+</header>
+<!-- End Header -->
+
+<!-- Navigation -->
+<div id="nav_area">
+	<div class="nav_toggle_button">
+	<div class="logo_wrap"></div>
+		<div class="toggle_holder">
+			<div class="hamburger hamburger--spin-r">
+			  <div class="hamburger-box">
+				<div class="hamburger-inner"></div>
+			  </div>
+			</div>
+			<small>Menu</small>
+		</div>
+	<div class="clearfix"></div>
+	</div>
+
+	<div class="toggle_right_nav">
+	  <nav class="page_nav">
+			<div class="menu_slide_right">
+				<a href="<?php //echo get_home_url(); ?>" class="logo_slide_right"><figure><img src="images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"/></figure></a>
+				<div class="toggle_holder">
+					<div class="hamburger hamburger--spin-r">
+					  <div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					  </div>
+					</div>
+					<small>Close</small>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="wrapper">
+				<!--?php wp_nav_menu( array( 'container_class' => 'nav-menu', 'theme_location' => 'primary', 'after' => '<span><i class="fa fa-2x">&nbsp;&nbsp;&nbsp;&nbsp;</i></span>') ); ?-->
+				<ul>
+					<li class="current_page_item"><a href="#">Home</a></li>
+					<li><a href="javascipt:;">About Us</a></li>
+					<li><a href="javascipt:;">Programs</a></li>
+					<li><a href="javascipt:;">Our Staff</a></li>
+					<li><a href="javascipt:;">Enrollment</a></li>
+					<li><a href="javascipt:;">For Parents</a></li>
+					<li><a href="javascipt:;">Contact Us</a></li>
+				</ul>
+			</div>
+	  </nav>
+		<div class="toggle_nav_close"></div>
+	</div>
+</div>
+<!-- End Navigation -->
+
+<!-- Banner -->
+<div id="banner">
+	<div class="wrapper">
+		<div class="bnr_con">
+
+			<div class="slider">
+				<ul class="rslides">
+					<li><figure><img src="images/slider/1.jpg" alt=""/></figure></li>
+					<li><figure><img src="images/slider/2.jpg" alt=""/></figure></li>
+					<li><figure><img src="images/slider/3.jpg" alt=""/></figure></li>
+				</ul>
+			</div>
+
+			<figure class="bnr_before"><img src="images/bnr-before.png" alt=""/></figure>
+			<figure class="bnr_after"><img src="images/bnr-after.png" alt=""/></figure>
+
+			<div class="bnr_info">
+				<h2>Your Unique Slogan <span>Will Go Here </span></h2>
+				<p>Dummy text for the reader to review. Words shown on this layout are placeholders. This space is reserved.</p>
+				<a href="javascript:;">Find Out More</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- End Banner -->
+
+<div class="clearfix"></div>
+
+<!-- start og midtobottom -->
+
+<div class="midtobottom">
+
+<!-- Middle -->
+<div id="middle">
+	<div class="wrapper">
+		<div class="middle_con">
+			<div class="middle_boxes">
+
+				<section class="mid_box1">
+					<figure><img src="images/mid-img1.jpg" alt=""/></figure>
+					<h2>Infant <span>Care</span></h2>
+					<p>We are excited to post contents on the website.</p>
+					<a href="javascript:;">Click Here</a>
+				</section>
+
+				<section class="mid_box2">
+					<figure><img src="images/mid-img2.jpg" alt=""/></figure>
+					<h2>Kindergaten<span></span></h2>
+					<p>We are excited to post contents on the website.</p>
+					<a href="javascript:;">Click Here</a>
+				</section>
+
+				<section class="mid_box3">
+					<figure><img src="images/mid-img3.jpg" alt=""/></figure>
+					<h2>After-<span>School</span></h2>
+					<p>We are excited to post contents on the website.</p>
+					<a href="javascript:;">Click Here</a>
+				</section>
+
+				<section class="mid_box4">
+					<figure><img src="images/mid-img4.jpg" alt=""/></figure>
+					<h2>More <span>Programs</span></h2>
+					<p>We are excited to post contents on the website.</p>
+					<a href="javascript:;">Click Here</a>
+				</section>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Middle -->
+
+<!-- Main -->
+<div id="main_area">
+	<div class="wrapper">
+		<div class="main_con">
+			<main>
+				<figure class="main_img1"><img src="images/main-before.png" alt=""/></figure>
+				<figure class="main_img2"><img src="images/main-after.png" alt=""/></figure>
+				<h1 class="h1_title"><span>INTRODUCING </span>Company Name <small>Childcare</small>
+					</h1>
+				<p>We are excited to post contents on the website. This space is reserved for more information about the company. These dummy text is intended to show you the volume of content that will be used on this particular page. Thank you for visiting our website. These contents are temporary and are for display purposes only. We can post company information here. Such space is reserved for the reader to learn more about the business.</p>
+			</main>
+
+			<!-- <aside class="sidebar">
+				<div class="side_box1">
+					<ul>
+						<li><a href="javascript:;"></a></li>
+						<li><a href="javascript:;"></a></li>
+						<li><a href="javascript:;"></a></li>
+					</ul>
+				</div>
+			</aside> -->
+		</div>
+
+	<div class="clearfix"></div>
+	</div>
+</div>
+<!-- End Main -->
+
+<!-- Bottom -->
+<div id="bottom1">
+	<div class="wrapper">
+		<div class="btm1_con">
+
+			<div class="btm1_info">
+				<h2>We Are Committed <span>Mission Statement</span></h2>
+				<p>We are excited to post contents on the website. This space is reserved for more information about the company. These dummy text is intended to show you the volume of content that will be used on this particular page.</p>
+				<a href="javascript:;">About Us</a>
+			</div>
+
+			<div class="clearfix"></div>
+
+			<ul class="btm1_btns">
+				<li><a href="javascript:;">Schedule a Tour</a></li>
+				<li><a href="javascript:;">Meet Our Faculty</a></li>
+				<li><a href="javascript:;">Upcoming Events</a></li>
+			</ul>	
+			
+		</div>
+	</div>
+</div>
+
+<div id="bottom2">
+	<div class="wrapper">
+		<div class="btm2_con">
+		
+			<div class="btm2_left_con">
+				<h2>Reach Out To Us<span>Drop Us a Message</span></h2>
+				<p>Additional business details will be uploaded on this website soon.</p>
+				<a href=""></a>
+			</div>
+			
+			<div class="btm2_right_con">
+				<div class="btm_form">
+					<form action="#" method="post">
+						<input type="text" name="Full_Name" placeholder="Full Name*" required="">
+						<input type="email" name="Email_Address" placeholder="Email Address*" required="">
+						<textarea name="Question_or_Comment" placeholder="Message(s)"></textarea>
+						<button type="submit" name="submit_info">Submit</button>
+					</form>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!-- End Bottom -->
+
+</div>
+<!-- end og midtobottom -->
+
+<!--Footer -->
+<footer>
+<div class="footer_top">
+	<div class="wrapper">
+		<div class="footer_top_con">
+			<div class="contact_info">
+				<h2>Get In Touch <span>Contact Information</span></h2>
+				<p>These contents are temporary and are for display purposes only. </p>
+
+				<ul>
+					<li>Phone: <mark>123-456-7890</mark></li>
+					<li>Email: <a href="mailto:info@samplemail.com">info@samplemail.com</a></li>
+					<li><address>123 Street Name, Suite A<q>,</q> <span>City Name, State 12345</span></address>		
+				</ul>
+			</div>
+
+			<!-- <div class="footer_logo">
+				<a href="<?php //echo get_home_url(); ?>"><figure><img src="images/footer-logo.png" alt="<?php //echo get_bloginfo('name');?>"></figure></a>
+			</div> -->
+		</div>
+	</div>
+</div>
+
+<div class="footer_btm">
+  <div class="wrapper">
+			<div class="footer_btm_con">
+				<div class="footer_nav">
+					<ul>
+						<li class="current_page_item"><a href="#">Home</a></li>
+						<li><a href="javascipt:;">About Us</a></li>
+						<li><a href="javascipt:;">Programs</a></li>
+						<li><a href="javascipt:;">Our Staff</a></li>
+						<li><a href="javascipt:;">Enrollment</a></li>
+						<li><a href="javascipt:;">For Parents</a></li>
+						<li><a href="javascipt:;">Contact Us</a></li>
+					</ul>
+				</div>
+
+				<div class="copyright">
+				  <a class="copyrigh_text">Designed by Argie Lumapac</a>
+				</div>
+			</div>
+		</div>
+</div>
+</footer>
+
+	<span class="back_top"></span>
+
+  </div> <!-- End Clearfix -->
+  </div> <!-- End Protect Me -->
+
+  <!--?php get_includes('ie');?-->
+
+  <!--
+  Solved HTML5 & CSS IE Issues
+  -->
+  <script src="js/modernizr-custom-v2.7.1.min.js"></script>
+  <script src="js/jquery-2.1.1.min.js"></script>
+
+  <!--
+  Solved Psuedo Elements IE Issues
+  -->
+  <script src="js/calcheight.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.skitter.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <!--?php wp_footer(); ?-->
+</body>
+</html>
+<!-- End Footer -->
